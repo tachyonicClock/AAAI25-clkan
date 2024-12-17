@@ -8,9 +8,13 @@ Catastrophically Forget But Differently From MLP".
 * The adaptive pruning procedure is implemented in `src/clkan/plugin/wisekan_plugin.py`
 * Low level parameter isolation functions are implemented in `src/clkan/model/paraiso.py`
 
-## Install
+## Setup
 
-### Conda
+### Installation
+
+Pick one of the following methods to setup a virtual environment with the required dependencies.
+
+#### Conda
 
 Setup a conda virtual environment or python virtual environment with python3.12:
 
@@ -22,7 +26,7 @@ conda activate clkan
 pip install -e .
 ```
 
-### Venv
+#### Venv
 
 Using python and Ubuntu:
 
@@ -33,7 +37,7 @@ source clkan/bin/activate
 pip install -e .
 ```
 
-### UV
+#### UV
 
 Using [uv](https://github.com/astral-sh/uv):
 
