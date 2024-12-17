@@ -1,0 +1,22 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+strategy:
+  type_: SI
+
+  si_lambda: 216.18292253237598
+model:
+  type_: EfficientKAN
+  layers_hidden:
+  - 120
+  n_hidden_layers: 1
+  spline_order: 1
+  grid_size: 12
+  grid_range: [-1, 1]
+  norm: none
+  activation_penalty_weight: 0.0
+  entropy_penalty_weight: 0.1
+  first_layer_is_linear: true
+training:
+  lr: 0.0026412814440002004

@@ -1,0 +1,10 @@
+# @package _global_
+scenario:
+  type_: IncrementalFeynman
+  hdf5_filename: "feynman.hdf5"
+  valid_proportion: 0.1
+
+training:
+  train_mb_size: 1024
+  epochs: 10
+  num_workers: 5

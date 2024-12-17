@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+- /scenario/eurowind/base
+
+model:
+  type_: WiseMLP
+  layers_hidden:
+  - 442
+  - 291
+  - 380
+  n_hidden_layers: 3
+  start_coef_prune_percent: 0.3587181229194145
+  early_stopping_threshold: 0.2811427777272686
+  min_sparsity: 0.1344065994111659
+  target_sparsity: 0.923938926882751
+training:
+  lr: 0.005081395184581978

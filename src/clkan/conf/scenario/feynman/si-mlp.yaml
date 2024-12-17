@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+strategy:
+  type_: SI
+
+  si_lambda: 69.80372719965023
+model:
+  type_: MLP
+  layers_hidden:
+  - 98
+  - 337
+  n_hidden_layers: 2
+training:
+  lr: 0.004683282903975653

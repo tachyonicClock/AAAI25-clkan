@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - /scenario/eurowind/base
+
+model:
+  type_: MLP
+  layers_hidden: [256]
+
+watch_gradients: True

@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+- /scenario/eurowind/base
+
+strategy:
+  type_: SI
+
+  si_lambda: 93.70805419915416
+model:
+  type_: MLP
+  layers_hidden:
+  - 135
+  - 396
+  n_hidden_layers: 2
+training:
+  lr: 0.008000702262279086

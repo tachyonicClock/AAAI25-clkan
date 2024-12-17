@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+  - override /hydra/sweeper: optuna
+  - override /hydra/launcher: joblib
+  # Use random sampler
+  - override /hydra/sweeper/sampler: random
+
+training:
+  num_workers: 0
+  lr: null
+
+hydra:
+  sweeper:
+    n_trials: 20
+    n_jobs: 20
+    direction:
+      - minimize # R2
+      - minimize # Number of parameters
+
+    # Use environment variable
+    storage: ${oc.env:OPTUNA_STORAGE,sqlite:///optuna.db}
+    max_failure_rate: 0.75
+    params:
+      training.lr: tag(log, interval(0.00005, 0.1))

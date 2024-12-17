@@ -1,0 +1,34 @@
+# @package _global_
+defaults:
+  - /sweep/base/base
+
+model:
+  layers_hidden: [0, 0, 0, 0, 0]
+  n_hidden_layers: null
+  grid_size: null
+  grid_range: null
+  norm: null
+  activation_penalty_weight: null
+  entropy_penalty_weight: null
+  first_layer_is_linear: null
+  spline_order: null
+
+hydra:
+  sweeper:
+    params:
+      model.layers_hidden.0: int(interval(1, 128))
+      model.layers_hidden.1: int(interval(1, 128))
+      model.layers_hidden.2: int(interval(1, 128))
+      model.n_hidden_layers: choice(1, 2, 3)
+
+      model.spline_order: int(choice(1,2,3))
+      model.grid_size: int(range(3, 18, 3))
+      model.grid_range: choice("[-3, 3]", "[-2, 2]", "[-1, 1]", "[-4, 4]")
+
+      model.norm: choice("none", "batch", "layer")
+
+      model.activation_penalty_weight: choice(0.0, 0.1, 0.5, 1.0, 2.0, 5.0)
+      model.entropy_penalty_weight: choice(0.0, 0.1, 0.5, 1.0, 2.0, 5.0)
+
+      model.first_layer_is_linear: choice(true, false)
+

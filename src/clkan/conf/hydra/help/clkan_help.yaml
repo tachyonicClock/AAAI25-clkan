@@ -1,0 +1,22 @@
+template: |-
+  clkan +scenario/[SCENARIO]=[STRATEGY]
+    [SCENARIO]: eurowind feynman riverradar
+    [STRATEGY]: ewc-kan ewc-mlp joint-kan joint-mlp kan mlp packnet si-kan 
+                si-mlp wisekan wisemlp
+  
+  Example:
+    clkan +scenario/riverradar=wisekan
+  
+  ------------------------------------------------------------------------------
+  You can override individual hyperparameters by using the following syntax:
+  `+key=value`/`+key.subkey=value`
+
+  Below is a list of hyperparameters that can be overridden:
+
+  $CONFIG
+
+  
+
+
+
+

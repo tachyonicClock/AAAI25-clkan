@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - /sweep/mlp
+
+model:
+  type_: PackNet
+  prune_ratio: null
+  prune_after_p_percent: null
+
+hydra:
+  sweeper:
+    params:
+      model.prune_ratio: interval(0.1, 0.9)
+      model.prune_after_p_percent: interval(0.1, 0.9)

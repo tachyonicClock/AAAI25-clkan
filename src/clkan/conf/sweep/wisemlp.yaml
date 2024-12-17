@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+  - /sweep/mlp
+
+model:
+  start_coef_prune_percent: null
+  early_stopping_threshold: null
+  min_sparsity: null
+  target_sparsity: null
+
+hydra:
+  sweeper:
+    params:
+      model.start_coef_prune_percent: interval(0.1,0.9)
+      model.early_stopping_threshold: interval(0.01,0.3)
+      model.min_sparsity: interval(0.1, 0.5)
+      model.target_sparsity: interval(0.9, 1.0)

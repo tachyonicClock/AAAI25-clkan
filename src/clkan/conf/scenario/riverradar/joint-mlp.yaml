@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+model:
+  type_: MLP
+
+  layers_hidden:
+  - 338
+  - 386
+  - 414
+  n_hidden_layers: 3
+scenario:
+  num_tasks: 1
+  orthogonalize_targets: false
+training:
+  lr: 0.0007780995862346479

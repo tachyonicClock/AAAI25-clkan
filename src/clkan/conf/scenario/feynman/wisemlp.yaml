@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+model:
+  type_: WiseMLP
+  layers_hidden:
+  - 278
+  - 484
+  - 288
+  n_hidden_layers: 3
+  start_coef_prune_percent: 0.32757378625893796
+  early_stopping_threshold: 0.22154920564309435
+  min_sparsity: 0.4559052519981588
+  target_sparsity: 0.9609258813574815
+training:
+  lr: 0.007848242827556319

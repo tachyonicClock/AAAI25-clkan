@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+- /scenario/eurowind/base
+
+model:
+  type_: PackNet
+
+  layers_hidden:
+  - 198
+  - 510
+  - 265
+  n_hidden_layers: 3
+  prune_ratio: 0.7758113569929559
+  prune_after_p_percent: 0.8720163497104049
+training:
+  lr: 0.0028831792358195983

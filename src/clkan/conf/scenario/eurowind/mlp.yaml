@@ -1,0 +1,11 @@
+# @package _global_
+defaults:
+- /scenario/eurowind/base
+
+model:
+  type_: MLP
+  layers_hidden:
+  - 461
+  n_hidden_layers: 1
+training:
+  lr: 0.0006501798979102754

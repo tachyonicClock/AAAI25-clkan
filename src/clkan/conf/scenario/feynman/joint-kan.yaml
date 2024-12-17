@@ -1,0 +1,23 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+model:
+  type_: EfficientKAN
+
+  layers_hidden:
+  - 56
+  - 63
+  - 110
+  n_hidden_layers: 3
+  spline_order: 2
+  grid_size: 15
+  grid_range: [-2, 2]
+  norm: none
+  activation_penalty_weight: 1.0
+  entropy_penalty_weight: 2.0
+  first_layer_is_linear: true
+scenario:
+  joint: true
+training:
+  lr: 0.0004022237350540025

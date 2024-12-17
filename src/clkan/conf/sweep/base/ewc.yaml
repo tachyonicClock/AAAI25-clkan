@@ -1,0 +1,10 @@
+# @package _global_
+
+strategy:
+  type_: EWC
+  ewc_lambda: null
+
+hydra:
+  sweeper:
+    params:
+      strategy.ewc_lambda: interval(0.1, 1000)

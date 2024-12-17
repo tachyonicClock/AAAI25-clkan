@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - /scenario/eurowind/base
+
+model:
+  type_: EfficientKAN
+  layers_hidden: [43]
+  grid_size: 3
+
+  enable_base_weight: False
+  enable_standalone_scale_spline: False
+
+watch_gradients: True

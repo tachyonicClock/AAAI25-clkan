@@ -1,0 +1,10 @@
+# @package _global_
+
+strategy:
+  type_: SI
+  si_lambda: null
+
+hydra:
+  sweeper:
+    params:
+      strategy.si_lambda: interval(0.1, 1000)

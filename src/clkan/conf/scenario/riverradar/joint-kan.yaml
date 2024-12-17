@@ -1,0 +1,23 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+model:
+  type_: EfficientKAN
+
+  layers_hidden:
+  - 121
+  - 107
+  n_hidden_layers: 2
+  spline_order: 2
+  grid_size: 9
+  grid_range: [-4, 4]
+  norm: batch
+  activation_penalty_weight: 0.5
+  entropy_penalty_weight: 0.1
+  first_layer_is_linear: false
+scenario:
+  num_tasks: 1
+  orthogonalize_targets: false
+training:
+  lr: 0.011735374304925376

@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/mlp
+
+strategy:
+  type_: EWC
+
+  ewc_lambda: 412.4352893215578
+model:
+  type_: MLP
+
+  layers_hidden:
+  - 24
+  - 428
+  n_hidden_layers: 2
+training:
+  lr: 0.00019565611595120464

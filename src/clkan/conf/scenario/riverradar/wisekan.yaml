@@ -1,0 +1,23 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+model:
+  type_: WiseKAN
+  layers_hidden:
+  - 53
+  - 128
+  n_hidden_layers: 2
+  spline_order: 1
+  grid_size: 18
+  grid_range: [-1, 1]
+  norm: none
+  activation_penalty_weight: 1.0
+  entropy_penalty_weight: 5.0
+  first_layer_is_linear: false
+  start_edge_prune_percent: 0.4154486387657492
+  start_coef_prune_percent: 0.5562679459712585
+  early_stopping_threshold: 0.11430556637101848
+  min_sparsity: 0.1420094248148437
+training:
+  lr: 0.0006964802585868148

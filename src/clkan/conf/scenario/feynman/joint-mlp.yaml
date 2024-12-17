@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+model:
+  type_: MLP
+
+  layers_hidden:
+  - 317
+  - 318
+  - 76
+  n_hidden_layers: 3
+scenario:
+  joint: true
+training:
+  lr: 0.00012453311079063626

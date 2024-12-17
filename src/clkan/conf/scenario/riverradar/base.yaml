@@ -1,0 +1,11 @@
+# @package _global_
+scenario:
+  type_: TaskIncrementalRegression
+  hdf5_filename: "riverradar.hdf5"
+  num_tasks: 7
+  orthogonalize_targets: true
+
+training:
+  train_mb_size: 512
+  epochs: 75
+  num_workers: 5

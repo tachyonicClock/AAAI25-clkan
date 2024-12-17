@@ -1,0 +1,22 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+strategy:
+  type_: EWC
+
+  ewc_lambda: 651.8775023667497
+model:
+  type_: EfficientKAN
+  layers_hidden:
+  - 117
+  n_hidden_layers: 1
+  spline_order: 3
+  grid_size: 12
+  grid_range: [-1, 1]
+  norm: none
+  activation_penalty_weight: 5.0
+  entropy_penalty_weight: 0.5
+  first_layer_is_linear: true
+training:
+  lr: 0.02648527874892978

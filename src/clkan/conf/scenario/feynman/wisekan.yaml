@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+model:
+  type_: WiseKAN
+  layers_hidden:
+  - 68
+  - 40
+  - 54
+  n_hidden_layers: 3
+  spline_order: 3
+  grid_size: 15
+  grid_range: [-2, 2]
+  norm: none
+  activation_penalty_weight: 0.1
+  entropy_penalty_weight: 0.5
+  first_layer_is_linear: false
+  start_edge_prune_percent: 0.3181302180042179
+  start_coef_prune_percent: 0.6309330945233613
+  early_stopping_threshold: 0.09264065403384535
+  min_sparsity: 0.4193142268419833
+training:
+  lr: 0.006745373455277387

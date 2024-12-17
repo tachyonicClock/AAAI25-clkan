@@ -1,0 +1,24 @@
+# @package _global_
+defaults:
+- /scenario/eurowind/base
+
+model:
+  type_: WiseKAN
+  layers_hidden:
+  - 101
+  - 56
+  - 14
+  n_hidden_layers: 3
+  spline_order: 3
+  grid_size: 15
+  grid_range: [-4, 4]
+  norm: batch
+  activation_penalty_weight: 0.5
+  entropy_penalty_weight: 0.5
+  first_layer_is_linear: false
+  start_edge_prune_percent: 0.10042736740845562
+  start_coef_prune_percent: 0.816052583701472
+  early_stopping_threshold: 0.07407849677375158
+  min_sparsity: 0.37721028795331846
+training:
+  lr: 0.0024164442328272317

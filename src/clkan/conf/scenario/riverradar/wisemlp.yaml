@@ -1,0 +1,17 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+model:
+  type_: WiseMLP
+  layers_hidden:
+  - 481
+  - 306
+  - 492
+  n_hidden_layers: 3
+  start_coef_prune_percent: 0.28384551085566734
+  early_stopping_threshold: 0.1373395890561489
+  min_sparsity: 0.2968193806334976
+  target_sparsity: 0.9147970576431835
+training:
+  lr: 0.0005595385926637871

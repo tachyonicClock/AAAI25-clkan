@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+strategy:
+  type_: SI
+
+  si_lambda: 843.1125854690318
+model:
+  type_: MLP
+  layers_hidden:
+  - 143
+  - 498
+  n_hidden_layers: 2
+training:
+  lr: 0.0007905428109766978

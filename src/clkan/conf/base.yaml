@@ -1,0 +1,8 @@
+defaults:
+  - override hydra/help: clkan_help
+
+training:
+  optimizer: Adam
+
+hydra:
+  output_subdir: null

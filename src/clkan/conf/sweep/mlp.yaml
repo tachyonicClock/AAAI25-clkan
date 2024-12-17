@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - /sweep/base/base
+
+model:
+  layers_hidden: [0, 0, 0, 0, 0]
+  n_hidden_layers: null
+
+hydra:
+  sweeper:
+    params:
+      model.layers_hidden.0: int(interval(1, 512))
+      model.layers_hidden.1: int(interval(1, 512))
+      model.layers_hidden.2: int(interval(1, 512))
+      model.n_hidden_layers: choice(1, 2, 3)

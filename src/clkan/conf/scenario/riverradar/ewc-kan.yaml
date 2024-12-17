@@ -1,0 +1,23 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+strategy:
+  type_: EWC
+
+  ewc_lambda: 970.5086517717219
+model:
+  type_: EfficientKAN
+  layers_hidden:
+  - 100
+  - 119
+  n_hidden_layers: 2
+  spline_order: 3
+  grid_size: 3
+  grid_range: [-1, 1]
+  norm: layer
+  activation_penalty_weight: 0.5
+  entropy_penalty_weight: 0.0
+  first_layer_is_linear: true
+training:
+  lr: 0.0006871071805247624

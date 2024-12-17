@@ -1,0 +1,23 @@
+# @package _global_
+defaults:
+- /scenario/riverradar/base
+
+strategy:
+  type_: SI
+
+  si_lambda: 563.0597547363744
+model:
+  type_: EfficientKAN
+  layers_hidden:
+  - 57
+  - 91
+  n_hidden_layers: 2
+  spline_order: 3
+  grid_size: 9
+  grid_range: [-4, 4]
+  norm: none
+  activation_penalty_weight: 5.0
+  entropy_penalty_weight: 5.0
+  first_layer_is_linear: false
+training:
+  lr: 0.0019641996945442344

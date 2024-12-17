@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+- /scenario/feynman/base
+
+strategy:
+  type_: EWC
+
+  ewc_lambda: 539.2616394855153
+model:
+  type_: MLP
+
+  layers_hidden:
+  - 490
+  n_hidden_layers: 1
+training:
+  lr: 0.0045829651313218315

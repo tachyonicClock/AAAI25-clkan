@@ -1,0 +1,22 @@
+# @package _global_
+defaults:
+- /scenario/eurowind/base
+
+strategy:
+  type_: SI
+
+  si_lambda: 901.8416677185085
+model:
+  type_: EfficientKAN
+  layers_hidden:
+  - 69
+  n_hidden_layers: 1
+  spline_order: 3
+  grid_size: 18
+  grid_range: [-3, 3]
+  norm: none
+  activation_penalty_weight: 0.5
+  entropy_penalty_weight: 0.0
+  first_layer_is_linear: true
+training:
+  lr: 0.007547789024153807
